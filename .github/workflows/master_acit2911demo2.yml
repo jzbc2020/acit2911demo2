@@ -39,6 +39,8 @@ jobs:
           path: |
             . 
             !venv/
+script:
+- pytest appTest.py -v --cov
 
   deploy:
     runs-on: ubuntu-latest
